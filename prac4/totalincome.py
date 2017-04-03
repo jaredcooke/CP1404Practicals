@@ -6,12 +6,12 @@ Starter code for cumulative total income program
 
 def main():
     incomes = []
-    got_month = False
-    while not got_month:
+    got_months = False
+    while not got_months:
         try:
             number_of_months = int(input("How many months? "))
             if number_of_months > 0:
-                got_month = True
+                got_months = True
             else:
                 print('Please enter a valid number of months')
         except ValueError:
