@@ -1,3 +1,12 @@
+<Label>:
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    color: 0, 0, 0.7, 1
+
 BoxLayout:
     orientation: 'vertical'
     BoxLayout:
@@ -6,6 +15,7 @@ BoxLayout:
             text: ''
             font_size: 48
             id: input_number
+            foreground_color: (0, 0, 0, 1)
             on_text: app.handle_convert()
         BoxLayout:
             orientation: 'vertical'
@@ -22,6 +32,6 @@ BoxLayout:
         id: output_label
         text: '0.0'
         font_size: 40
-        color: (255, 255, 0, 1)
+        color: (0, 0, 0, 1)
 
 
